@@ -22,19 +22,19 @@ const Navbar = async () => {
         </div>
         <ul className='flex gap-8 items-center'>
           <li className='text-[18px]
-           hover:text-red-500 cursor-pointer'>
+           hover:text-red-500 cursor-pointer hidden md:block'>
             <Link href={"/"}>
               Home
             </Link>
           </li>
           <li className='text-[18px]
-           hover:text-red-500 cursor-pointer'>
+           hover:text-red-500 cursor-pointer hidden md:block'>
             <Link href={"/about"}>
               About Us
             </Link>
           </li>
           <li className='text-[18px]
-           hover:text-red-500 cursor-pointer'>
+           hover:text-red-500 cursor-pointer hidden md:block'>
             {session?.user ? (
               <UserAccountNav user={session.user} />
             ) : (
