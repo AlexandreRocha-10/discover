@@ -34,7 +34,7 @@ const Navbar = async () => {
             </Link>
           </li>
           <li className='text-[18px]
-           hover:text-red-500 cursor-pointer hidden md:block'>
+           hover:text-red-500 cursor-pointer'>
             {session?.user ? (
               <UserAccountNav user={session.user} />
             ) : (
